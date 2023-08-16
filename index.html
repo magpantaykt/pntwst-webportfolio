@@ -29,25 +29,26 @@
 	<!-- End of CSS Link -->
 
 	<title>My Profile</title>
+
 </head>
 <body class="bg-light">
 	<!-- Header: For NavBar -->
 	<header>
-		<nav class="container-fluid p-1 fixed-top bg-transparent border-dark border-bottom">
-			<ul class="d-flex justify-content-center align-items-center mb-0 gap-2 body-text">
+		<nav class="container-fluid p-1 bg-nav fixed-top">
+			<ul class="d-flex justify-content-center align-items-center mb-0 gap-3 body-text">
 				<li class="order-3 navLogo mx-1"> <a href="#landing"> <img src="images/main-logo.png" width="60px" height="40px"> </a> </li>
-				<li class="order-1"> <a href="#about" class="navLink fw-normal">About</a> </li>
-				<li class="order-2"> <a href="#my-projects" class="navLink fw-normal">My Projects</a> </li>
-				<li class="order-4"> <a href="#my-tools" class="navLink fw-normal">Tools</a> </li>
-				<li class="order-5"> <a href="#contact-me" class="navLink fw-normal">Contact</a> </li>
+				<li class="order-1"> <a href="#about" class="navLink text-dark fw-normal">About</a> </li>
+				<li class="order-2"> <a href="#my-projects" class="navLink text-dark fw-normal">My Projects</a> </li>
+				<li class="order-4"> <a href="#my-tools" class="navLink text-dark fw-normal">Tools</a> </li>
+				<li class="order-5"> <a href="#contact-me" class="navLink text-dark fw-normal">Contact</a> </li>
 			</ul>
 		</nav>
 		<div id="landing">
 			<div class="container-fluid header-bg p-5">
-				<!-- <h1 class="header-title text-light text-center fw-bolder">kyle magpantay</h1> -->
+				<h1 class="header-title text-light text-center fw-bolder">kyle magpantay</h1>
 				<div class="header-banner">
-					<h1 class="subbanner-title text-dark fw-bolder">Full Stack</h1>
-					<h1 class="subbanner-subtitle text-dark fw-bolder">Web Developer</h1>
+					<h1 class="subbanner-title text-secondary fw-bolder">Full Stack</h1>
+					<h1 class="subbanner-subtitle text-secondary fw-bolder">Web Developer</h1>
 				</div>
 			</div>
 			<!-- Insert background image here with translucent overlay -->
@@ -56,7 +57,7 @@
 	<!-- End of Header -->
 
 	<!-- Section: Tools -->
-	<section id="my-tools" class="border-light border-bottom border-top">
+	<section id="my-tools" class="border-light border-bottom border-top mb-5">
 		<div class="container-fluid bg-tools">
 			<div class="row">
 				<div class="col-md-4 col-sm-12 d-flex justify-content-md-center align-items-center my-2">
@@ -86,10 +87,10 @@
 	<!-- End of Tools Section -->
 
 	<!-- Section: Projects -->
-	<section id="my-projects" class="my-5">
+	<section id="my-projects" class="my-3 p-5">
 		<div class="container-fluid">
-			<div class="row">
-				<h3 class="m-3 text-center text-dark header-text fw-bold">My Projects</h3>
+			<div class="row justify-content-around">
+				<h1 class="m-3 text-center text-dark header-text fw-bold">My Projects</h1>
 				<div class="col-md-4 col-sm-12 my-2">
 					<div class="card mx-1 h-100">
 						<img src="images/project1.png" class="card-img-top" alt="..." height="75%">
@@ -97,11 +98,6 @@
 					    	<h5 class="card-title text-center header-text">TGA LMS</h5>
 					    	<p class="card-text content-text">The Global Academy's Learning Module System, catering different users: admin, students, and instructors.</p>
 
-					    	<p class="text-center header-text mb-1">Tools Used</p>
-					    	<ul class="tools-used">
-					    		<li>Design: Figma</li>
-					    		<li>Framework: PHP CodeIgniter</li>
-					    	</ul>
 					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
 					  	</div>
 					</div>
@@ -113,11 +109,6 @@
 					    	<h5 class="card-title text-center header-text">ECommerse</h5>
 					    	<p class="card-text content-text">A startup website application for buy and sell founded by Cavite State University CoE students.</p>
 
-					    	<p class="text-center header-text mb-1">Tools Used</p>
-					   		<ul class="tools-used">
-					   			<li>Design: Figma</li>
-					   			<li>Framework: PHP CodeIgniter</li>
-					   		</ul>
 					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
 					  	</div>
 					</div>
@@ -129,11 +120,6 @@
 					    	<p class="card-title text-center header-text">LEJ LMS</p>
 					    	<p class="card-text content-text">Another Learning Module System, this time, for learning English with joy.</p>
 
-					    	<p class="text-center header-text mb-1">Tools Used</p>
-					    	<ul class="tools-used">
-					    		<li>Design: Figma</li>
-					    		<li>Framework: PHP CodeIgniter</li>
-					    	</ul>
 					    	<a href="#" class="btn btn-projects text-light content-text fw-bold mt-auto">See Project</a>
 					  	</div>
 					</div>
@@ -144,46 +130,98 @@
 	<!-- End of Projects Section -->
 
 	<!-- Section: about -->
-	<section id="about" class="min-vh-100 mb-3">
+	<section id="about" class="my-3 py-5">
 		<div class="container-fluid ">
 			<div class="row">
-				<div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-				  	<div class="carousel-inner" role="listbox">
-				    	<div class="carousel-item active">
-				    		<div class="row d-flex justify-content-md-center">
-				    			<div class="col-md-6 col-sm-12 order-1">
-				    				<img class="d-block w-100 rounded-circle" src="images/profile.jpg" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 400px; height: 400px;">
+				<h1 class="text-center text-dark header-text fw-bold">About</h1>
+
+					<div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+				  		<div class="carousel-inner">
+				    		<div class="carousel-item active">
+				    			<div class="row justify-content-center align-items-center mx-3">
+				    				<div class="col-md-4 col-sm-12 order-1 mb-5">
+				    					<div class="about-image">
+				    						<img class="d-block w-100" src="images/profile.jpg" data-src="holder.js/150x150?theme=social" alt="150x150" data-holder-rendered="true" style="width: 20px; height: 200px;">
+				    					</div>
+				    				</div>
+				    				<div class="col-md-8 col-sm-12 order-2">
+				    					<div class="d-flex flex-column about-text">
+				    						<p class="card-text content-text">Hi! I'm Kyle Trisha Magpantay, and I am a passionate full stack developer. I have always had a keen interest in technology and love working with both front-end and back-end development. With a solid understanding of various programming languages, frameworks, and databases, I bring a versatile skill set to the table.</p>
+				    					</div>
+				    				</div>
 				    			</div>
-				    			<div>
-				    				
-				    			</div>
-				    			
+			    			</div>
 				    		</div>
-				      		
-				    	</div>
-				    	<div class="carousel-item">
-				      		<img class="d-block w-100" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22900%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_189fcd8847f%20text%20%7B%20fill%3A%23C2F200%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A45pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_189fcd8847f%22%3E%3Crect%20width%3D%22900%22%20height%3D%22400%22%20fill%3D%22%23434A52%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22333.203125%22%20y%3D%22220.1%22%3E900x400%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
-				    	</div>
-				  	</div>
-				  	<a class="carousel-control-prev" href="#carouselFadeExampleIndicators" role="button" data-slide="prev">
-				    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    	<span class="sr-only">Previous</span>
-				  	</a>
-				  	<a class="carousel-control-next" href="#carouselFadeExampleIndicators" role="button" data-slide="next">
-				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    	<span class="sr-only">Next</span>
-				  	</a>
-				</div>
-			</div>
+				    		<div class="carousel-item">
+				    			<div class="row align-items-center mx-5">
+				    				<div class="col-12">
+				    					<div class="d-flex flex-column text-center about-text h-100">
+				    						<p class="card-text content-text">I enjoy the challenge of creating dynamic and intuitive user experiences while ensuring seamless functionality on the backend. Whether it's crafting visually appealing UIs, building robust APIs, or optimizing database performance, I strive to deliver high-quality solutions that meet the needs of users and clients. </p>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="carousel-item">
+				    			<div class="row align-items-center mx-5">
+				    				<div class="col-12">
+				    					<div class="d-flex flex-column text-center about-text h-100">
+				    						<p class="card-text content-text"> I am constantly learning and staying up-to-date with the latest industry trends to enhance my expertise and contribute to innovative projects. Let's collaborate and bring your ideas to life!</p>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				  		</div>
+					</div>
 		</div>
 	</section>
 	<!-- End of About Section -->
 
 	<!-- Section: Contact -->
-	<section id="contact-me" class="min-vh-100 my-3">
-		<div class="container-fluid">
+	<section id="contact-me" class="mt-5">
+		<div class="container-fluid bg-dark p-3">
 			<div class="row">
-				
+				<h3 class="text-center text-light header-text fw-bold my-3">Contact Me</h3>
+				<div class="col-md-8 col-sm-12 order-2">
+					<form id="form-col" class="text-light content-text">
+					  	<div class="form-group mb-3">
+					    	<label for="name">Name</label>
+					    	<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+					  	</div>
+					  	<div class="form-group mb-3">
+					    	<label for="emailAddress">Email Address</label>
+					    	<input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+					 	</div>
+					  	<div class="form-group mb-3">
+					    	<label for="contactNumber">Contact Number</label>
+					    	<input type="number" class="form-control" id="contactNumber" placeholder="Enter your contact number" required>
+					  	</div>
+					  	<div class="form-group">
+					  		<label for="message">Message</label>
+					    	<textarea id="message" placeholder="Enter your message" class="w-100 rounded py-2 px-3" rows="5" required></textarea>
+					  	</div>
+					  	<button class="btn-projects text-white p-2 mt-2 border border-dark rounded" type="button" data-bs-toggle="modal" data-bs-target="#modalDiv">Send Email</button>
+
+					  	<!-- Modal -->
+					  	<div class="modal fade" id="modalDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					    	<div class="modal-dialog">
+					      		<div class="modal-content">
+					        		<div class="modal-header">
+					          			<h1 class="modal-title fs-5 text-dark" id="modalDivLabel">Thank you for contacting me</h1>
+					        		</div>
+					        		<div class="modal-body justify-content-center text-dark">
+					          			Message successfully sent!
+					        		</div>
+					        		<div class="modal-footer">
+					          			<button type="button" class="btn btn-projects" data-bs-dismiss="modal">Close</button>
+					        		</div>
+					      		</div>
+					    	</div>
+					  </div>
+					</form>
+				</div>
+				<div class="col-md-4 col-sm-12 order-1">
+					<li class="order-3 navLogo mx-1 d-flex justify-content-center align-items-center m-5"> <a href="#landing"> <img src="images/main-logo.png" width="180px" height="150px"> </a> </li>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -191,11 +229,9 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<!-- Large Footer for Links -->
-
 		<!-- Footer proper -->
-		<div class="container-xl bg-secondary p-1">
-			<div class="d-flex justify-content-center d-grid gap-3 body-text font-weight-light footer-foot">
+		<div class="container-fluid bg-nav p-1">
+			<div class="d-flex justify-content-center d-grid gap-3 text-dark body-text font-weight-light footer-foot">
 				<div>Footer</div>
 				<div>|</div>
 				<div>Terms of Use</div>

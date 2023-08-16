@@ -16,7 +16,12 @@ a{
 svg{
     margin-right: 15px !important;
 }
-
+button{
+    display: none;
+}
+section div div h1{
+    letter-spacing: 9px;
+}
 
 /* DECLARED CLASSES */
 .header-text{
@@ -28,9 +33,17 @@ svg{
 .body-text{
     font-family: 'Judson', serif;
 }
+.bg-red{
+    background-color: #B70404 !important;
+}
 /* END OF DECLARED CLASSES */
 
-/* MEDIA BREAKPOINTS*/ 
+/* MEDIA BREAKPOINTS*/
+@media (max-width: 576px){
+    .header-title{
+        top: 50px;
+    }    
+}
 @media (max-width: 375px){
     .navLink{
         display: none !important;
@@ -63,11 +76,11 @@ svg{
 
 /* FOR HEADER */
 /* FOR NAVBAR */
-/*nav{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}*/
-ul li a{
-    color: #CFCDCD !important;
+nav{
+    border-bottom: 1px solid #B70404 !important;
+}
+.bg-nav{
+    background-color: #CFCDCD !important;
 }
 .navLink:hover{
     color: #B70404 !important;
@@ -83,38 +96,37 @@ ul li a{
 /* FOR BANNER */
 .header-banner{
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: calc(1.5rem + 1.5vw);
 }
 .header-title{
+    text-transform: uppercase;
     position: relative;
-    top: 50px;
-    z-index: 3;
-    font-size: calc(1.5rem + 1.5vw);
-    text-transform: uppercase;    
+    top: 65px;
+    z-index: 2;
+    text-align: center;
+    font-size: calc(1.5rem + 1.5vw);  
 }
 .subbanner-title, .subbanner-subtitle{
     text-shadow: rgba(1, 1, 1, 0.7);
-}
-.subbanner-title{
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    text-align: right !important;
-    font-size: calc(1.5rem + 1.5vw);
-}
-.subbanner-subtitle{
-    position: relative;
-    top: -10px;
-    left: 0;
-    z-index: 1;
-    text-align: left;
-    font-size: calc(1.5rem + 1.5vw);    
 }
 /* END OF BANNER */
 /* END OF HEADER */
 
 
 /* FOR ABOUT SECTION */
+.about-text p{
+    text-align: left;
+}
+.about-image{
+    max-width: 50%;
+    margin: auto;
+}
+.about-image img{
+    border-radius: 50%;
+}
 /* END ABOUT SECTION */
 
 
@@ -127,7 +139,7 @@ ul li a{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .card-text{
-    text-align: justify;
+    text-align: center;
 }
 .btn{
     width: 100%;
@@ -140,6 +152,7 @@ ul li a{
     border: 1px solid #B11730 !important;
     background-color: #FFF !important;
     color: #B11730 !important;
+    font-weight: 700;
 }
 /* END MY-PROJECTS SECTION */
 
@@ -155,6 +168,15 @@ ul li a{
 
 
 /* FOR CONTACT SECTION */
+form, input, textarea{
+    border: none !important;
+}
+input:focus, textarea:focus, input:active, textarea:active{
+    border: 1px solid #B11730 !important;
+}
+#contact-me div div h3{
+    letter-spacing: 9px;
+}
 /* END CONTACT SECTION */
 
 
