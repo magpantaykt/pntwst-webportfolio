@@ -39,7 +39,7 @@ section div div h1{
 /* MEDIA BREAKPOINTS*/
 @media (max-width: 576px){
     .header-title{
-        top: 50px;
+        top: 55px !important;
     }    
 }
 @media (max-width: 375px){
