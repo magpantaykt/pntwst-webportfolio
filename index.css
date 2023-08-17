@@ -123,6 +123,8 @@ nav{
     margin: auto;
 }
 .about-image img{
+    width: 150px !important; 
+    height: 150px !important;
     border-radius: 50%;
 }
 /* END ABOUT SECTION */
